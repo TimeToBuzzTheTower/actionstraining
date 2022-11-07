@@ -1,0 +1,10 @@
+name: my own one
+on: [push,workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello World"
+      - run: mkdir myfolder
+      - run: ls -alH 
